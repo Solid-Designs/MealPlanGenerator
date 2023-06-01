@@ -1,0 +1,20 @@
+{% extends 'recipes/base.html' %}
+
+{% block content %}
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Recipe Name</th>
+            <th>Ingredients</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for recipe in raw_plan %}
+        <tr>
+            <td>{{recipe}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
